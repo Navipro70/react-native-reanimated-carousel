@@ -37,7 +37,7 @@ interface Props {
   translation: Animated.SharedValue<number>
 }
 
-const IScrollViewGesture: React.FC<Props> = (props) => {
+export const ScrollViewGesture: React.FC<Props> = (props) => {
   const {
     props: {
       vertical,
@@ -283,5 +283,3 @@ const IScrollViewGesture: React.FC<Props> = (props) => {
     </PanGestureHandler>
   );
 };
-
-export const ScrollViewGesture = IScrollViewGesture;
